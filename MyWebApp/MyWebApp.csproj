@@ -11,4 +11,9 @@
 		<Exec Command="dotnet publish ../SampleWebJob/ -o $(PublishDir)App_Data/Jobs/triggered/SampleWebJob" />
 	</Target>
 
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Web.WebJobs.Publish" Version="17.1.361" />
+	</ItemGroup>
+
 </Project>
